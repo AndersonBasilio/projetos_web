@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #294c71 url(imagens/fundo.png) repeat-x;
+}
+
+strong {
+    color: black;
+    background-color: white;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+#topo_site {
+    height: 150px;
+    padding-top: 25px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+
+}
+
+/* Barra de Navegação */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo_site ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+
+}
+
+#topo_site ul li {
+    float: left;
+
+}
+
+#topo_site ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.4em;
+    line-height: 2.0em;
+    text-decoration: none;
+    color: white;
+    background: url(imagens/divisor.png) no-repeat left center;
+
+}
+
+#topo_site ul .primeiro a {
+    background: none;
+
+}
+
+#topo_site ul a:hover {
+    background: crimson;
+    
+}
+
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5e0; 
+}
+
+#lateral {
+    width: 180px; 
+    margin: 0 0 20px -750px;
+    float: left;
+ }
+
+#tres_colunas #primario {
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+    
+}
+
+#primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#duas_colunas #primario {
+    width: 555px;
+
+}
+
+#uma_coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+
+
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/*Caixa*/
+.caixa {
+    background: #f3f3f3e3 url(imagens/fundo-caixa.png); 
+    margin: 10px 0; 
+    padding: 5px;
+    font-weight: bold;
+}
+
+.caixa h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    background: #052446;
+    padding: 6px;
+
+}
+
+.caixa_conteudo {
+    background: #bccfe4;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*Formatação Menu laterais*/
+#lateral ul a {
+    display: block;
+    line-height: 30px;
+    color: #153658;
+    text-decoration: none;
+    border-bottom: 2px solid #f3f3f3;
+
+}
+
+#lateral ul a:hover {
+    background: url(imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    background-color: #f3f3f3;
+}
+
+/*Formatando Formularios*/
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.9em;
+    width: 150px;
+    margin: 2px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.textos {
+    margin: 20px;
+    color: #052446;
+}
+
+.enviar {
+    color: white;
+    background: #b10333; 
+    height: 30px;
+}
+
+/*Formantando Imagens*/
+img.imagem_principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+    margin-top: 2px;
+}
+
+/*Formatando cabeçalhos*/
+.conteudo_destaque h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    background: rgb(5, 71, 126);
+    color: white;
+    padding: 3px;
+}
+
+/*Formatando lista de Noticias*/
+#lista_noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #8b8888;
+    height: 65px;
+}
+
+#lista_noticias li a img {
+    float: left;
+    margin: 5px;
+    
+}
+#lista_noticias li a {
+    text-decoration: none;
+
+}
+
+#lista_noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #2f6baa;
+
+}
+
+#lista_noticias li a p {
+    font-size: 0.7em;
+
+}
+
+#lista_noticias li:hover {
+    background: #84a8cf;
+    cursor: pointer;
+
+}
+
+/*Rodapé*/
+#container_rodape{
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+    color: #fff;
+    background: crimson;
+    cursor: text;
+
+}
