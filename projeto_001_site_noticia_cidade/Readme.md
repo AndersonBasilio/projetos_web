@@ -6,8 +6,8 @@
   
 </p>
 --------------------------------------------------------------------------------------------------------------------
-<h1>Tecnologias usadas: </h1>
-<h2>HTML e CSS</h2>
+<h1>Tecnologias usadas: HTML e CSS</h1>
 
-<img >
+## Layout Web:
+![layout_web](https://github.com/AndersonBasilio/projetos_web/blob/main/assets/projeto_001_pagina_noticia_cidade.png)
 
