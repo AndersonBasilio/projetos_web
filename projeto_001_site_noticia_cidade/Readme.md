@@ -1,8 +1,8 @@
 <h1>Projeto Web</h1>
-<h2>Página Site de Noticia Cidade</h2>
+<h2>Página Site de Notícia Cidade</h2>
 
 <p>
-  Projeto criado uma página de noticia com barra de navegação horizontal e vertical, layouts em colunas.
+  Projeto página de notícia com barra de navegação horizontal e vertical, layouts em colunas.
   
 </p>
 --------------------------------------------------------------------------------------------------------------------
