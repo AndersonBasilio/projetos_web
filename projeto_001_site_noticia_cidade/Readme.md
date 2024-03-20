@@ -2,7 +2,8 @@
 <h2>Página Site de Notícia Cidade</h2>
 
 <p>
-  Projeto página de notícia com barra de navegação horizontal e vertical, layouts em colunas.
+  Projeto página de notícia com barra de navegação horizontal e vertical, layouts em colunas e paginas com 
+  tres, duas e uma coluna.
   
 </p>
 --------------------------------------------------------------------------------------------------------------------
