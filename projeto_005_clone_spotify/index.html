@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!--CSS Customizado-->
+    <link rel="stylesheet" href="css/estilo/estilo.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+    <title>Música para todos - Spotify</title>
+    <link rel="icon" href="imagens/favicon.png">
+</head>
+<body>
+
+    <header><!--Inicio do header-->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente"><!--Inicio do nav-->
+            <div class="container"><!--Inicio Container-->
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/spotify.svg" alt="" width="142">
+                </a>
+
+                <!--Menu Humburger-->
+                <button class="navbar-toggler text-white" data-toggle="collapse" data-target="#menu_principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <!--Navegação-->
+                <div class="collapse navbar-collapse" id="menu_principal"><!--Inicio navegação-->
+                    <ul class="navbar-nav ml-auto float-left">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href=""class="nav-link">Baixar</a>
+                        </li>
+                        <li class="nove-item divisor">
+                             | 
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Inscrever-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Entrar</a>
+                        </li>
+                    </ul>
+                </div><!--Fim navegação-->
+            </div><!--Fim container-->
+        </nav><!--Fim do nav-->
+    </header><!--Fim header-->
+
+    <section id="home" class="d-flex"><!--Inicio da home-->
+        <div class="container align-self-center"><!--Inicio container-->
+            <div class="row"><!--Inicio da div row-->
+                <div class="col-md-12 centraliza-conteudo"><!--Inicio da classe coluna-->
+
+                    <!--Primeiro item carousel-->
+                    <div  id="carousel-spotify" class="carousel slide" data-ride="carousel"><!--Inicio da div carousel-->
+                        <div class="carousel-inner"><!--Inicio da classe inner-->
+                            <div class="carousel-item active"><!--Inicio carousel item-->
+                                <h1>Música para Todos</h1>
+                                <a href="" class="btn btn-lg btn-custom btn-roxo">Aproveite o Spotify Free</a>
+                                <a href="" class="btn btn-lg btn-custom btn-branco">Obter spotify premium</a>
+                            </div><!--Fim carousel item--> 
+
+                            <!--Segundo item Carousel-->
+                            
+                            <div class="carousel-item"><!--Inicio carousel item-->
+                                <h1>As melhores rádios</h1>
+                                <a href="" class="btn btn-lg btn-custom btn-branco"><i class="fas fa-headphones"></i> Ouça agora</a>
+                            </div><!--Fim carousel item-->
+                        </div><!--Fim da classe inner-->
+
+                        <!--Controle-->
+                        <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-left fa-3x"></i>
+                         </a>
+                        
+                        <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-right fa-3x"></i>
+                        </a>
+                    </div><!--Fim da div carousel-->
+
+                </div><!--Fim da classe coluna-->
+            </div><!--Fim da div row-->
+        </div><!--Fim Container-->
+    </section><!--Fim da home-->
+
+    <section id="servicos" class="caixa"><!--Inicio da section Serviços-->
+        <div class="container"><!--Inicio da div container-->
+            <div class="row"><!--Inicio da row-->
+                <div class="col-md-6"><!--inicio da columa imagens-->
+                    <div class="row albuns">
+                        <div class="col-md-6">
+                            <img src="imagens/img1.jpg" alt="" class="img-fluid d-none d-md-block">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens/img2.jpg" alt="" class="img-fluid d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imagens/img3.jpg" alt="" class="img-fluid d-none d-md-block">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens/img4.jpg" alt="" class="img-fluid d-none d-md-block">
+                        </div>
+
+                    </div>
+                </div><!--Fim da coluna de imagens-->
+                <div class="col-md-6"><!--Inicio da coluna texto-->
+                    <h2>O que o Spotify tem?</h2>
+
+                    <h3>Músicas</h3>
+                    <p>
+                        O Spotify tem milhões de músicas. Escute seus sons
+                        favoritos, descubra novas músicas e reúna seus favoritos em um so lugar.
+                    </p>
+
+                    <h3>Playlists</h3>
+                    <p>
+                        No Spotify você encontra uma playlist para cada momento.
+                        Todas feitas por fanáticos e especialistas da música.
+                    </p>
+
+                    <h3>Novos Lançamentos</h3>
+                    <p>
+                        Escute novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.
+                    </p>
+
+                </div><!--Fim da coluna texto-->
+            </div><!--Fim da row-->
+        </div><!--Fim da div container-->
+    </section><!--Fim da Section Serviços-->
+
+    <section id="recursos" class="caixa"><!--Inicio Section recurso-->
+        <div class="container"><!--Inicio div container-->
+            <div class="row"><!--Inicio div row-->
+                <div class="col-md-4"><!--Inicio div texto-->
+                    <h2>Facil</h2>
+                    <h3>Buscar</h3>
+                    <p class="text-white">
+                        Já sabe o que quer escutar? É só procurar e apertar o play.
+                    </p>
+
+                    <h3>Navegar</h3>
+                    <p class="text-white">
+                        Veja novos lançamentos, o que está bombando nas paradas e as melhores playlists para o momento.
+                    </p>
+
+                    <h3>Descobrir</h3>
+                    <p class="text-white">
+                        Curta as músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.
+                    </p>
+                </div><!--Fim div texto-->
+                <div class="col-md-8 rotacionar"><!--Inicio div imagens-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imagens/iphone1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="imagens/iphone2.png" alt="" class="img-fluid">
+                        </div>
+                    </div>               
+                </div><!--Fim div imagens-->
+            </div><!--Fim da div row-->
+        </div><!--Fim div container-->
+    </section><!--Fim Section recurso-->
+
+    <footer><!--Inicio Rodapé-->
+        <div class="container"><!--Inicio container-->
+            <div class="row"><!--Inicio da row-->
+                <div class="col-md-2"><!--Inicio da primeira coluna-->
+                    <img src="imagens/spotify.svg" alt="" width="142">
+                </div><!--Fim da primeira coluna-->
+                <div class="col-md-2"><!--Inicio da segunda coluna-->
+                    <h4>Company</h4>
+                    <ul class="navbar-nav">
+                        <li> <a href="">Sobre</a></li>
+                        <li> <a href="">Empregos</a></li>
+                        <li><a href="">Imprensa</a></li>
+                        <li><a href="">Novidades</a></li>
+                    </ul>
+
+                </div><!--Fim da segunda coluna-->
+                <div class="col-md-2"><!--Inicio a terceira coluna-->
+                    <h4>Comunidades</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Artistas</a></li>
+                        <li><a href="">Desenvolvedores</a></li>
+                        <li><a href="">Marcas</a></li>
+                    </ul>
+                </div><!--Fim da terceira coluna-->
+                <div class="col-md-2"><!--Inicio quarta coluna-->
+                    <h4>Links Uteis</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Ajuda</a></li>
+                        <li><a href="">Presentes</a></li>
+                        <li><a href="">Player da Web</a></li>
+                    </ul>                    
+
+                </div><!--Fim quarta coluna-->
+                <div class="col-md-4"><!--Inicio redes sociais-->
+                    <ul>
+                        <li><a href=""><img src="imagens/facebook.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/instagram.png" alt=""></a></li>
+                        <li><a href=""><img src="imagens/twitter.png" alt=""></a></li>
+                    </ul>
+                </div><!--Fim redes sociais-->
+            </div><!--Fim da row-->
+        </div><!--Fim container-->
+    </footer><!--Fim Rodapé-->
+
+
+    
+
+    
+    
+
+
+
+
+
+
+    <!--Colocar o Javascript ao final dos conteudos-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    
+    <!--Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script><!--Desta forma utilizamos direto da pasta do projeto-->
+
+   <!--Option 2: Separate Popper and Bootstrap JS -->    
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <!-- Adicionando Esse trecho de código conseguimos colocar o path no input do Custom file input -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+        <script>
+                $(document).ready(function () {
+                bsCustomFileInput.init()
+            })
+        </script>
+</body>
+</html>

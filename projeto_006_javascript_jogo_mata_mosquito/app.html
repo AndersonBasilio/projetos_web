@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Customizado-->
+    <link rel="stylesheet" href="estilo/css/estilo.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="estilo/bootstrap/bootstrap.min.css">
+    
+    <!--Arquivo JS-->
+    <script src="js/jogo.js"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagens/mosquito.png" type="image/x-icon" width="">
+
+    <title>Jogo Mata Mosquito</title>
+</head>
+<body onresize="ajusta_tamanho_palco_jogo()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="">
+
+        </div>
+        <div class="cronometro"> Tempo Restante: <span id="cronometro"></span>
+
+        </div>
+
+    </div>
+
+
+    <!--Dessa Forma conseguimos acessar os valores.-->
+    
+    <script>
+        
+        document.getElementById('cronometro').innerHTML = tempo;
+
+        posicao_randomica();
+
+        var cria_mosquito = setInterval(function() {
+            posicao_randomica();
+        }, cria_mosquito_tempo)
+    </script>
+    
+</body>
+</html>

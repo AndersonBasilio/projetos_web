@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border-bottom: 30px solid green;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#7acef0, #E0F6FF );
+
+}
+
+.pipe{
+    width: 60px;
+    bottom: 0;
+    position: absolute;
+    right: -80;
+    animation-name: pipe-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mario{
+    bottom: 0;
+    position: absolute;
+    width: 115px;
+    
+}
+
+.jump {
+    animation: mario-animation 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 300px;
+    animation-name: clouds;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.terra{
+    background-color:#865625;
+    height: 418px;
+    
+}
+
+@keyframes clouds {
+    from {
+        right: 0;
+    }
+    
+    to {
+        right: 100%;  
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: 0;
+    }
+    
+    to {
+        right: 100%;  
+    }
+    
+}
+
+@keyframes mario-animation {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom:180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
