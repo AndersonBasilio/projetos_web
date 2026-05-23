@@ -13,14 +13,6 @@ import {
     limparBusca
 } from "./tabela.js";
 
-// 🔒 VERIFICAR LOGIN
-const logado = localStorage.getItem("logado");
-
-if (logado !== "true") {
-
-    window.location.href = "./login.html";
-}
-
 // GLOBAIS HTML
 window.salvar = salvar;
 
@@ -41,27 +33,13 @@ window.limparBusca = limparBusca;
 // INICIAR
 window.onload = () => {
 
-    // MOSTRAR USUÁRIO LOGADO
-    const usuario =
-        localStorage.getItem("usuarioLogado");
-
-    document.getElementById(
-        "usuario-logado"
-    ).innerText =
-        `👤 ${usuario}`;
-
     carregar();
 
     mostrarDashboard();
 };
 
-// 🚪 SAIR
+// SAIR
 function logout() {
-
-    const confirmar =
-        confirm("Deseja realmente sair?");
-
-    if (!confirmar) return;
 
     localStorage.removeItem("logado");
 
