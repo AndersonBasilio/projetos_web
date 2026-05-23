@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Catadores</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+
+    <!-- 🔹 MENU LATERAL -->
+    <div class="sidebar">
+        <h2>Sistema Cadastro de Catadores</h2>
+
+        <a href="#" onclick="mostrarDashboard()">📊 Dashboard</a>
+        <a href="#" onclick="mostrarCatadores()">📋 Listar Catadores</a>
+        <a href="#" onclick="mostrarNovosCatadores()">➕ Novo Catador</a>
+        <p id="usuario-logado"></p>
+
+        <a href="#" onclick="logout()">
+            🚪 Sair
+        </a>
+
+    </div>
+
+    <!-- 🔹 CONTEÚDO PRINCIPAL -->
+    <div class="main">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h2>Gestão de Catadores</h2>
+        </div>
+
+        <!-- 🔹 DASHBOARD -->
+        <div class="card-dashboard" id="dashboard">
+            <h3 style="color: white;">Status dos Catadores</h3>
+            <canvas id="graficoPizza"></canvas>
+        </div>
+
+        <!-- 🔹 CARDS -->
+        <div class="cards" id="cards">
+            <div class="card">
+                <h3>Total</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Ativos</h3>
+                <p id="ativos">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Inativos</h3>
+                <p id="inativos">0</p>
+            </div>
+        </div>
+
+        <!-- 🔹 FORMULÁRIO -->
+        <div class="form" id="formulario">
+            <h3 id="titulo-form">Cadastrar Novo Catador</h3>
+
+            <input type="hidden" id="id">
+
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="cpf" placeholder="CPF">
+            <input type="date" id="data">
+            <input type="text" id="telefone" placeholder="Telefone">
+            <input type="text" id="endereco" placeholder="Endereço">
+
+            <select id="status">
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+            </select>
+
+            <button onclick="salvar()">Salvar</button>
+        </div>
+
+        <!-- 🔹 TABELA -->
+        <div class="table-container" id="tabela-container">
+
+            <h3>Lista de Catadores</h3>
+
+            <br>
+
+            Buscar por CPF:
+            <input type="text" id="busca" placeholder="Digite o CPF">
+            <button onclick="carregar()">Buscar</button>
+            <button onclick="limparBusca()">Limpar</button>
+
+            <br><br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabela"></tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- 🔹 CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- 🔹 JS -->
+    <!--<script src="./assets/script/js/script.js"></script>-->
+    <script type="module" src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

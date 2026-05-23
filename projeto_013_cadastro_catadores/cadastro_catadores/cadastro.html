@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastrar Usuário</title>
+
+    <link rel="stylesheet" href="./assets/style/login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Cadastrar Usuário</h1>
+
+        <input type="text" id="novoUsuario" placeholder="Usuário">
+
+        <input type="password" id="novaSenha" placeholder="Senha">
+
+        <button onclick="cadastrarUsuario()">
+            Cadastrar
+        </button>
+
+        <a href="./login.html">
+            Já possui conta?
+        </a>
+
+        <p id="erro"></p>
+
+    </div>
+
+    <script type="module" src="./assets/js/cadastro.js"></script>
+
+</body>
+
+</html>
